@@ -280,10 +280,9 @@ position: relative;
     gap: 1rem;
 }
 .right h1{
-    letter-spacing: 0.19rem;
-    font-weight: 500;
-    font-size: 29.5px;
-    height: 25px;
+    font-weight: 400;
+    font-size: 2rem;
+
 }
 .right p{
     font-weight: 300;
@@ -348,4 +347,134 @@ gap: 1rem;
 }
 .right .download__app_container div img{
     width: 37%;
+}
+@media only screen and (max-width: 1100px){
+    .get__the_app .semiContainer .left,
+    .get__the_app .semiContainer .right{
+       flex: 1;  
+        
+    }
+    .get__the_app .semiContainer{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .get__the_app{
+        padding: 2rem 0;
+    }
+    .get__the_app .semiContainer{
+        width: 95%;
+        flex-direction: column;
+    }   
+}
+.footer{
+    width: 100%;
+}
+.footer_section1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin:auto;
+}
+.footer_section1 img{
+    width: 130px;
+    /* margin-left: 0%; */
+}
+.section1__buttonContainer{
+    display: flex;
+    gap: 1rem;
+}
+.section1__buttonContainer button{
+    padding: 10px;
+    width: 130px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-left: 0%;
+    cursor: pointer;
+}
+.navigation_container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 40px 0;
+}
+.link__container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.link__container a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 300;
+    font-size: 15px;
+}
+.link__container a:hover{
+   color:  black;
+}
+.link__container h5{
+    font-size: 15px;
+    font-weight: 440;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+.section__links_container{
+    display: flex;
+    gap: 7px;
+}
+.section__links_container button{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 25px;
+    height: 25px;
+    /* first make it as square the convert into a circle by changing the border radius */
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+.footer__section_logos{
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap;
+    size: 3px; */
+}
+.disclaimer{
+    width: 95%;
+    padding-left: 130px;
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    border-top: 1px solid grey;
+    border-color:gainsboro;
+    padding-top: 1.5rem;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 900px){
+    .navigation_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media only screen and (max-width: 500px){
+    .navigation_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width: 330px){
+    .navigation_container{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
